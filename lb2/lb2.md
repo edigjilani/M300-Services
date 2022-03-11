@@ -1,1 +1,1 @@
-# lb2 Doku
+# lb2 Doku, diese Dokumentation ist ein Produkt von Edi Sherifi. 
