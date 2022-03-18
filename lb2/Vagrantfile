@@ -3,4 +3,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.define "database" do |db|
     db.vm.box = "ubuntu/xenial64"
+    db.vm.provider "virtualbox" do |vb|
+      vb.memory = "512"
+    end
+    
   
