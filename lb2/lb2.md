@@ -2,5 +2,5 @@
 # Diese Dokumentation ist ein Produkt von Edi Sherifi. 
 ----------------------------------------------------------------------------
 ## **Inhaltsverzeichnis**
-# *Einleitung
-# *Grafische Übersicht
+# Einleitung
+# Grafische Übersicht
