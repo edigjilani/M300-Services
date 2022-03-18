@@ -6,5 +6,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     db.vm.provider "virtualbox" do |vb|
       vb.memory = "512"
     end
-    
+
+    db.vm.hostname = "Datenbank1"
+    db.vm.network "private_network", ip: "192.168.69.144"
+    db.vm.provision "shell", path: "db.sh"
+  end
   
