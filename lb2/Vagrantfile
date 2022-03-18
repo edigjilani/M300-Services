@@ -35,6 +35,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   sudo mkdir /usr/share/adminer
 	sudo wget "http://www.adminer.org/latest.php" -O /usr/share/adminer/latest.php
 	sudo ln -s /usr/share/adminer/latest.php /usr/share/adminer/adminer.php
+  echo "Alias /adminer.php /usr/share/adminer/adminer.php" | sudo tee /etc/apache2/conf-available/adminer.conf
+		sudo a2enconf adminer.conf 
+		sudo service apache2 restart 
+    echo '127.0.0.1 localhost Webserver1\n192.168.69.145 db01' > /etc/hosts
+SHELL
+    end  
+end  
 
 
     
