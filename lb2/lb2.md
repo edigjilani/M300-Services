@@ -19,7 +19,7 @@ Für die Leistungsbeurteilung 2 erstelle ich mit meinem Vagrantfile einen Webser
 Dieses Bild zeigt auf wie die Umgebung aufgebaut ist. 
 
     +*******************************************************************+
-    + Notebook - Schulnetz 10.x.x.x und Privates Netz 192.168.55.1      +                 
+    + Notebook - Privates Netz 192.168.69.1                             +                 
     + Port: 8080 (192.168.69.145:80)                                    +	
     +                                                                   +	
     +    ++++++++++++++++++++++              +++++++++++++++++++++++    +
