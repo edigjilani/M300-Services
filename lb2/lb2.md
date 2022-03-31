@@ -24,7 +24,7 @@ Dieses Bild zeigt auf wie die Umgebung aufgebaut ist.
      Port: 8080 (192.168.69.145:80)                                                           	
         %%%%%%%%%%%%%%%%%%%%%%              %%%%%%%%%%%%%%%%%%%%%%%   
         = Web-Server         =              = Datenbank-Server    =           
-        = Host: Weberserver1 =              = Host: Datenbank1    =    
+        = Host: Webserver1 =              = Host: Datenbank1    =    
         = IP: 192.168.69.145 = <Connection> = IP: 192.168.69.144  =    
         = Port: 80           =              = Port 3306           =    
         = Nat: 8080          =              = Nat:                =    
@@ -195,12 +195,12 @@ VALUES ('Sherifi', 'Eddie', 'Steinstrasse', Dietikon);
 
 
 sudo service mysql restart
-```
+-
 
 
 ## Test
 
-Zuerst muss man sicherstellen ob der zugriff über diese URL auf den Webserver ordnungsgemäss funktioniert:
+Zuerst muss man sicherstellen ob der Zugriff über diese URL auf den Webserver ordnungsgemäss funktioniert:
 http://localhost:8080/adminer.php
 
 ![login](login.png)
@@ -217,7 +217,7 @@ Datenbank: Datenbank1
 
 Danach erscheint folgender Bildschirm:
 
-![eingeloggt](screen2.PNG)
+![eingeloggt](login.PNG)
 
 Man kann nach "Tommy" in der Suchleiste suchen --> unter der Tabelle "Persons" und es sollte folgender Datensatz hervorkommen:
 

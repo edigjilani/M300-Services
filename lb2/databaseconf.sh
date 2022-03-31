@@ -1,8 +1,8 @@
 
 ##############################################################################################################
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password ediedi-123'
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password ediedi123.'
 
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password ediedi-123'
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password ediedi123.'
 
 sudo apt-get install -y mysql-server
 
@@ -10,11 +10,11 @@ sudo sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mys
 
 ##############################################################################################################
 
-mysql -uroot -pediedi-123 <<%EOF%
+mysql -uroot -pediedi123. <<%EOF%
 
 	
-CREATE USER 'root'@'192.168.69.144' IDENTIFIED BY '';ediedi-123
-	GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.69.144'
+CREATE USER 'root'@'192.168.69.145' IDENTIFIED BY 'ediedi123.';
+	GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.69.145';
 	FLUSH PRIVILEGES;
 	
 	CREATE DATABASE Edi;
@@ -31,10 +31,10 @@ CREATE TABLE Persons (
 	
 	
 INSERT INTO Persons (LastName, FirstName, Address, City)
-VALUES ('Sherifi', 'Eddie', 'Steinstrasse', Dietikon); 
+VALUES ('Sherifi', 'Eddie', 'Steinstrasse', 'Dietikon'); 
 
 
-CREATE TABLE Food
+CREATE TABLE Food (
     Name varchar(255),
     SpiceLevel int,
     Country char(255)

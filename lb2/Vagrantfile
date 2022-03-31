@@ -1,11 +1,13 @@
 VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.define "Datenbank1" do |db|
+  config.vm.define "database" do |db|
     db.vm.box = "ubuntu/xenial64"
     db.vm.provider "virtualbox" do |vb|
       vb.memory = "512"
     end
+
+
 
     db.vm.hostname = "Datenbank1"
     db.vm.network "private_network", ip: "192.168.69.144"
@@ -13,7 +15,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
 
-  config.vm.define "web" do |web|
+
+  config.vm.define "webserver" do |web|
     web.vm.box = "ubuntu/xenial64"
     web.vm.hostname = "Webserver1"
     web.vm.network "private_network", ip:"192.168.69.145" 
@@ -22,13 +25,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       vb.memory = "512" 
     end
 
+
+
   
   web.vm.synced_folder ".", "/var/www/html"  
   web.vm.provision "shell", inline: <<-SHELL
   sudo apt-get update
-  sudo apt-get -y install debconf-utils apache2 nmap
-  sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password ediedi-123'
-	sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password ediedi-123'
+  sudo apt-get -y install debconf-utils apache2
+  sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password ediedi123.'
+	sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password ediedi123.'
 	sudo apt-get -y install php libapache2-mod-php php-curl php-cli php-mysql php-gd mysql-client  
 
 
@@ -38,7 +43,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   echo "Alias /adminer.php /usr/share/adminer/adminer.php" | sudo tee /etc/apache2/conf-available/adminer.conf
 		sudo a2enconf adminer.conf 
 		sudo service apache2 restart 
-    echo '127.0.0.1 localhost Webserver1\n192.168.69.145 db01' > /etc/hosts
+    echo '127.0.0.1 localhost Webserver1\n192.168.69.144 Datenbank1' > /etc/hosts
 SHELL
     end  
 end  
