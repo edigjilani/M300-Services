@@ -6,9 +6,9 @@
 ## Grafische Übersicht
 ## Meine Umgebung
 ## Beschreibung des Codes
-## Vagrant
-## Databaseconf.sh
-## Login Test
+## Vagrantfile
+## Databaseconf Script
+## Tests
 ## Sicherheit
 ## Persönliche Reflexion
 ## Quellen
@@ -57,16 +57,15 @@ vagrant ssh web
 
 Das MySQL Adminer User Interface ist via http://localhost:8080/adminer.php mit folgenden Log-In Daten erreichbar:
 
--Vagrant
+```Vagrant
 Datenbank System: MySQL
 Server: datenbanklb2
 Benutzer: root
 Passwort: ediedi-123
 Datenbank: Datenbank1
--
+```
 
-
-## Code
+## Beschreibung des Codes
 
 Ich habe in diesem Abschnitt ein paar Teile vom Code eingefügt. Dieser Code ist essenziell für meine VMs, mit diesem Code funktioniert das gesamte Projekt. Ich habe auch ein paar Teile des Codes kommentiert, damit er verständlicher wird. 
 
@@ -199,7 +198,7 @@ sudo service mysql restart
 ```
 
 
-## Test
+## Tests
 
 Zuerst muss man sicherstellen ob der Zugriff über diese URL auf den Webserver ordnungsgemäss funktioniert:
 http://localhost:8080/adminer.php
@@ -238,7 +237,7 @@ Während dem Projekt fühlte ich mich nicht verloren, da ich immer Unterstützun
 
 Alles in Allem kann ich behaupten, das ich trotzdem erfolgreich war und doch viel mitnehme aus dieser LB2. 
 
-## Quellen/ Quellenverzeichnis
+## Quellen/Quellenverzeichnis
 
 Bei einem Grossteil des Quellcodes für beide musste ich mich bei Herr Bergers Vorlage bedienen, da ich Mühe hatte das gesamte Projekt von Null zu starten. Trotzdem habe ich den Code verstanden und auch selbst teilweise fertig geschrieben. 
 Es ist mir sehr wichtig, mein eigenes Projekt auch verstehen zu können.
@@ -250,11 +249,11 @@ Es ist mir sehr wichtig, mein eigenes Projekt auch verstehen zu können.
 
 ## Kontaktperson
 
-Bei weiteren Fragen, wenden Sie sich bitte an mich:
+Bei Fragen oder Anliegen, wenden Sie sich bitte an folgende Kontaktperson:
 
-|Name|Vorname|E-Mail|
-|----|-----|-----|
-|Sherifi|Edi|edi.sherifi@edu.tbz.ch|
+|Name|Vorname|E-Mail|Firma|
+|----|-----|-----|-----|
+|Sherifi|Edi|edi.sherifi@edu.tbz.ch|Credit Suisse|
 
 
 
