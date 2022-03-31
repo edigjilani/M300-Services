@@ -1,7 +1,7 @@
 VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.define "datenbanklb2" do |db|
+  config.vm.define "Datenbank1" do |db|
     db.vm.box = "ubuntu/xenial64"
     db.vm.provider "virtualbox" do |vb|
       vb.memory = "512"
@@ -9,7 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     db.vm.hostname = "Datenbank1"
     db.vm.network "private_network", ip: "192.168.69.144"
-    db.vm.provision "shell", path: "db.sh"
+    db.vm.provision "shell", path: "databaseconf.sh"
   end
 
 
@@ -27,8 +27,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   web.vm.provision "shell", inline: <<-SHELL
   sudo apt-get update
   sudo apt-get -y install debconf-utils apache2 nmap
-  sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password admin'
-	sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password admin'
+  sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password ediedi-123'
+	sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password ediedi-123'
 	sudo apt-get -y install php libapache2-mod-php php-curl php-cli php-mysql php-gd mysql-client  
 
 
