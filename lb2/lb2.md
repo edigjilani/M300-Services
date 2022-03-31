@@ -235,7 +235,7 @@ In diesem Projekt habe ich sehr viel über das Thema Vagrant und GitHub lernen k
 
 Während dem Projekt fühlte ich mich nicht verloren, da ich immer Unterstützung erhalten habe. Ich war leider eine Woche lang krank und konnte deshalb nicht das Maximum rausholen aus dem Projekt.
 
-Alles in Allem kann ich behaupten, das ich trotzdem erfolgreich war und doch viel mitnehme aus dieser LB2. 
+Alles in Allem kann ich behaupten, dass ich trotzdem erfolgreich war und doch viel mitnehme aus dieser LB2. 
 
 ## Quellen/Quellenverzeichnis
 

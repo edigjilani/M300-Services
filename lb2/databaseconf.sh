@@ -43,6 +43,19 @@ CREATE TABLE Food (
 	
 INSERT INTO Food (Name, SpiceLevel, Country)
 VALUES ('Spaghetti', '1', 'Italy');
+
+
+CREATE TABLE Countries (
+    Name varchar(255),
+    Capital varchar(255),
+);
+		
+INSERT INTO Countries (Name, Capital)
+VALUES ('Italy', 'Rom');
+VALUES ('Switzerland', 'Bern');
+VALUES ('Germany', 'Berlin');
+VALUES ('Austria', 'Vienna');
+VALUES ('Kosovo', 'Pristina');
 	
 %EOF%
 
