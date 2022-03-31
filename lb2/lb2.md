@@ -16,7 +16,7 @@
 
 
 ## Einleitung
-Für die Leistungsbeurteilung 2 erstelle ich mit meinem Vagrantfile einen Webserver mit einer Datenbank dahinter. Es wird eine Webseite und Datenbank gehostet. Ich kann mich per Website mit einem Benutzer und Passwort auf der Datenbank anmelden. Mit dem Befehl "vagrant up" sollten die beiden VM's automatisiert aufstarten. Das ist der Sinn dahinter. 
+Für die Leistungsbeurteilung 2 erstelle ich mit meinem Vagrantfile einen Webserver mit einer Datenbank dahinter. Es wird eine Webseite und Datenbank gehostet. Ich kann mich per Website mit einem Benutzer und Passwort auf der Datenbank anmelden. Mit dem Befehl "vagrant up" sollten die beiden VMs automatisiert aufstarten. Das ist der Sinn dahinter. 
 
 ## Grafische Übersicht
 Dieses Bild zeigt auf wie die Umgebung aufgebaut ist. 
@@ -61,7 +61,7 @@ Das MySQL Adminer User Interface ist via http://localhost:8080/adminer.php mit f
 Datenbank System: MySQL
 Server: datenbanklb2
 Benutzer: root
-Passwort: ediedi-123
+Passwort: ediedi123.
 Datenbank: Datenbank1
 ```
 
@@ -161,23 +161,23 @@ Dieses Script wurde im Vagrantfile als Provision der Datenbank angegeben und so 
 Hier wird das Passwort der Datenbank definiert und gleichzeitig wird die Datenbank auch installiert:
 
 ```Vagrant
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password ediedi-123'
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password ediedi-123'
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password ediedi123.'
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password ediedi123.'
 sudo apt-get install -y mysql-server
 sudo sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
 
-In diesem Abschnitt werden die SQL Befehle direkt in der Datenbank (Datenbank1) ausgeführt. Eine Tabelle sowie auch eine Testperson werden erstellt. Letztlich startet man den MySQL Service neu.
+In diesem Abschnitt werden die SQL Befehle direkt in der Datenbank (Datenbank1) ausgeführt. Eine Tabelle sowie auch eine Testperson werden erstellt, ausserdem habe ich auch noch andere Tabellen hinzugefügt. Letztlich startet man den MySQL Service neu.
 
 ```mysql -uroot -pediedi-123 <<%EOF%
 	
-CREATE USER 'root'@'192.168.69.144' IDENTIFIED BY 'ediedi-123';
+CREATE USER 'root'@'192.168.69.144' IDENTIFIED BY 'ediedi123.';
 	GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.69.144';
 	FLUSH PRIVILEGES;
 	
-	CREATE DATABASE projektlb2;
+	CREATE DATABASE Edi;
 	
-	USE projektlb2;
+	USE Edi;
 	
 CREATE TABLE Persons (
     PersonID int,
@@ -209,8 +209,8 @@ Anschliessend kann man sich mit den untenstehenden Crendentials einloggen:
 Datenbank System: MySQL
 Server: Datenbank1
 Benutzer: root
-Passwort: ediedi-123
-Datenbank: Datenbank1
+Passwort: ediedi123.
+Datenbank: Edi
 ```
 
 Danach erscheint folgender Bildschirm:

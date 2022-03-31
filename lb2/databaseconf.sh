@@ -51,11 +51,7 @@ CREATE TABLE Countries (
 );
 		
 INSERT INTO Countries (Name, Capital)
-VALUES ('Italy', 'Rom'),
-VALUES ('Switzerland', 'Bern'),
-VALUES ('Germany', 'Berlin'),
-VALUES ('Austria', 'Vienna'),
-VALUES ('Kosovo', 'Pristina')
+VALUES ('Italy', 'Rom');
 	
 %EOF%
 
