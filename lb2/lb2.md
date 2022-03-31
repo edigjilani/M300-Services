@@ -4,10 +4,11 @@
 # **Inhaltsverzeichnis**
 ## Einleitung
 ## Grafische Übersicht
+## Meine Umgebung
 ## Befehle
-### Vagrant
-### Platzhalter
-### Platzhalter
+## Vagrant
+## Platzhalter
+## Platzhalter
 ## Web
 ## Testfälle
 ## Persönliche Reflexion
@@ -27,5 +28,16 @@ Dieses Bild zeigt auf wie die Umgebung aufgebaut ist.
         = IP: 192.168.69.145 = <Connection> = IP: 192.168.69.144  =    
         = Port: 80           =              = Port 3306           =    
         = Nat: 8080          =              = Nat:                =    
-        %%%%%%%%%%%%%%%%%%%%%%              %%%%%%%%%%%%%%%%%%%%%%%   
+        %%%%%%%%%%%%%%%%%%%%%%              %%%%%%%%%%%%%%%%%%%%%%%
+
+
+## Meine Umgebung
+
+Ich habe, wie oben bereits erwähnt, einen Webserver und eine Datenbank aufgesetzt. Selbstverständlich kann man mit dem Tool [Adminer](https://www.adminer.org/) auf die Datenbank zugreifen.
+<p></p>
+
+
+
+
+   
                                                                        
