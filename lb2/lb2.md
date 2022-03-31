@@ -221,13 +221,12 @@ Man kann nach "Spaghetti" in der Suchleiste suchen --> unter der Tabelle "Food" 
 
 ![spagh](spaghetti.PNG)
 
-Somit hat man geprüft, ob man sich Log On auf die Datenbank klappt und ob man per Script eine Tabelle erstellen und Daten automatisiert einfügen kann.
+Mit diesen kleinen Tests überprüft man, ob man das Log On auf die Datenbank klappt und ob man per Script eine Tabelle erstellen und Daten automatisiert einfügen kann.
 
 ## Sicherheit
 Es wurde ein Passwort mit Sonderzeichen genommen, damit Hackerattacken scheitern.
-Die Datenbank ist nur über eine Private Verbindung über den Webserver erreichbar.
+Die Datenbank ist nur über eine Private-Verbindung über den Webserver erreichbar.
 Leider verwendet der Webserver das unsichere HTTP Protokoll und ist folglich auch unsicherer als das verschlüsselte HTTPS Protokoll.
-
 
 
 ## Persönliche Reflexion
@@ -239,7 +238,7 @@ Alles in Allem kann ich behaupten, dass ich trotzdem erfolgreich war und doch vi
 
 ## Quellen/Quellenverzeichnis
 
-Bei einem Grossteil des Quellcodes für beide musste ich mich bei Herr Bergers Vorlage bedienen, da ich Mühe hatte das gesamte Projekt von Null zu starten. Trotzdem habe ich den Code verstanden und auch selbst teilweise fertig geschrieben. 
+Bei einem Grossteil des Quellcodes für beide Scripts musste ich mich bei Herr Bergers Vorlage bedienen, da ich Mühe hatte das gesamte Projekt von Null zu starten. Trotzdem habe ich den Code verstanden und auch selbst teilweise fertig geschrieben. 
 Es ist mir sehr wichtig, mein eigenes Projekt auch verstehen zu können.
 
 |Links|
