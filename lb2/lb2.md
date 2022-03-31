@@ -243,7 +243,7 @@ Bei einem Grossteil des Quellcodes für beide musste ich mich bei Herr Bergers V
 Es ist mir sehr wichtig, mein eigenes Projekt auch verstehen zu können.
 
 |Links|
-|----|-----|-----|
+|----|
 |https://www.vagrantup.com/docs/provisioning|
 |https://www.adminer.org/|
 
