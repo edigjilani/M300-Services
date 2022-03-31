@@ -17,9 +17,9 @@ CREATE USER 'root'@'192.168.69.144' IDENTIFIED BY '';ediedi-123
 	GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.69.144'
 	FLUSH PRIVILEGES;
 	
-	CREATE DATABASE Datenbank1;
+	CREATE DATABASE Edi;
 	
-	USE Datenbank1;
+	USE Edi;
 	
 CREATE TABLE Persons (
     PersonID int,
@@ -32,6 +32,17 @@ CREATE TABLE Persons (
 	
 INSERT INTO Persons (LastName, FirstName, Address, City)
 VALUES ('Sherifi', 'Eddie', 'Steinstrasse', Dietikon); 
+
+
+CREATE TABLE Food
+    Name varchar(255),
+    SpiceLevel int,
+    Country char(255)
+);
+	
+	
+INSERT INTO Food (Name, SpiceLevel, Country)
+VALUES ('Spaghetti', '1', 'Italy');
 	
 %EOF%
 
