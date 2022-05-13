@@ -15,3 +15,6 @@
 
 ## Einleitung
 Für die Leistungsbeurteilung 3 erstelle ich mit einer yaml-Datei ........ .  gehostet. ..... Mit dem Befehl "docker-compose up" sollten die beiden VMs automatisiert aufstarten. Ich werde dazu zwei bereits vorhandene Builds verwenden. Das ist der Sinn dahinter. 
+
+## Grafische Übersicht
+Diese Grafik zeigt auf, wie die Umgebung aufgebaut ist. 
