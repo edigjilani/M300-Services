@@ -21,7 +21,7 @@ ports:
 - '3306:3306'
 volumes:
 - d/m300-rep/M300-Services/LB3/data:/bitnami/mysql/data
-# --- PHP 7.4
+#PHP 7.4
 #
 php:
 container_name: "lb3-php"
@@ -31,7 +31,7 @@ depends_on:
 volumes:
 - /m300-rep/M300-Services/LB3/info.php:/app:delegated
 - .//php/php.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro
-# --- Apache 2.4
+#Apache 2.4
 #
 apache:
 container_name: "lb3-apache"
@@ -47,3 +47,16 @@ depends_on:
       - /m300-rep/M300-Services/LB3/server.key:/certs
       # Use this for bitnami's builtin certs:
       # /m300-rep/M300-Services/LB3/server.key:/opt/bitnami/apache2/conf/bitnami/certs
+#Redis 6.0
+  #
+  redis:
+    container_name: "lb3-redis"
+    image: bitnami/redis:6.0
+    environment:
+      - REDIS_PASSWORD=Gjilani123
+ 
+  #PhpMyAdmin latest
+  # Acccess via
+  # http://127.0.0.1:81 or https://127.0.0.1:8143
+  # Login with user root and mysql-password.
+  #
