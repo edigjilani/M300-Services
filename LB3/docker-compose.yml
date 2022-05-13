@@ -1,0 +1,21 @@
+---
+# Apache, MySQL, PHP, Redis and PhpMyAdmin
+# SSL is preconfigured.
+# Imagemagick and XDebug are activated.
+#
+# Run with 
+# docker-compose up -d
+#
+version: "0"
+services:
+# --- MySQL 5.7
+#
+mysql:
+container_name: "lb3-mysql"
+image: bitnami/mysql:5.7
+environment:
+- MYSQL_ROOT_PASSWORD=Gjilani123
+- MYSQL_USER=admin
+- MYSQL_PASSWORD=Gjilani123
+ports:
+- '3306:3306'
