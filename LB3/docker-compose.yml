@@ -60,3 +60,16 @@ depends_on:
   # http://127.0.0.1:81 or https://127.0.0.1:8143
   # Login with user root and mysql-password.
   #
+  phpmyadmin:
+    container_name: "lb3-phpmyadmin"
+    image: bitnami/phpmyadmin:latest
+    depends_on:
+      - mysql
+    ports:
+      - '81:8080'
+      - '8143:8443'
+    environment:
+      - DATABASE_HOST=host.docker.internal
+  volumes:
+  dstack-mysql:
+    driver: local
