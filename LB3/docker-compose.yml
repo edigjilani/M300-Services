@@ -20,7 +20,7 @@ environment:
 ports:
 - '3306:3306'
 volumes:
-- ./docker/mysql/data:/bitnami/mysql/data
+- d/m300-rep/M300-Services/LB3/data:/bitnami/mysql/data
 # --- PHP 7.4
 #
 php:
@@ -30,4 +30,21 @@ depends_on:
 - redis
 volumes:
 - ./docker/www:/app:delegated
-- ./docker/php/php.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro
+- .//php/php.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro
+# --- Apache 2.4
+#
+apache:
+container_name: "lb3-apache"
+image: bitnami/apache:2.4
+ports:
+- '80:8080'
+- '443:8443'
+depends_on:
+      - php
+    volumes:
+      - ./docker/www:/app:delegated
+      - ./docker/apache/my_vhost.conf:/vhosts/myapp.conf:ro
+      - ./docker/apache/certs:/certs
+      # Use this for bitnami's builtin certs:
+      # ./docker/apache/certs:/opt/bitnami/apache2/conf/bitnami/certs
+      
