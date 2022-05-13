@@ -19,3 +19,15 @@ environment:
 - MYSQL_PASSWORD=Gjilani123
 ports:
 - '3306:3306'
+volumes:
+- ./docker/mysql/data:/bitnami/mysql/data
+# --- PHP 7.4
+#
+php:
+container_name: "lb3-php"
+image: bitnami/php-fpm:7.4
+depends_on:
+- redis
+volumes:
+- ./docker/www:/app:delegated
+- ./docker/php/php.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro
