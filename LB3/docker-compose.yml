@@ -29,7 +29,7 @@ image: bitnami/php-fpm:7.4
 depends_on:
 - redis
 volumes:
-- ./docker/www:/app:delegated
+- /m300-rep/M300-Services/LB3/info.php:/app:delegated
 - .//php/php.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro
 # --- Apache 2.4
 #
@@ -42,9 +42,8 @@ ports:
 depends_on:
       - php
     volumes:
-      - ./docker/www:/app:delegated
-      - ./docker/apache/my_vhost.conf:/vhosts/myapp.conf:ro
-      - ./docker/apache/certs:/certs
+      - /m300-rep/M300-Services/LB3/info.php:/app:delegated
+      - /m300-rep/M300-Services/LB3/my_vhost.conf:/vhosts/myapp.conf:ro
+      - /m300-rep/M300-Services/LB3/server.key:/certs
       # Use this for bitnami's builtin certs:
-      # ./docker/apache/certs:/opt/bitnami/apache2/conf/bitnami/certs
-      
+      # /m300-rep/M300-Services/LB3/server.key:/opt/bitnami/apache2/conf/bitnami/certs
