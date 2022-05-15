@@ -72,9 +72,16 @@ Ich habe in diesem Abschnitt ein paar Teile vom Code eingefügt. Dieser Code ist
 
 **ports:** Hier kann man Ports freigeben. Man gibt entweder beide Ports oder nur den Container-Port an. 
 
-
-
 ## Tests
+
+Zuerst muss man sicherstellen ob der Zugriff über diese URL auf den Webserver ordnungsgemäss funktioniert:
+http://localhost:8080/
+
+Wenn das geklappt hat, sollte folgendes Fenster erscheinen:
+![logged in](successful.PNG)
+
+
+
 
 ## Sicherheit
 
