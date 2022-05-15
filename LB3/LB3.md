@@ -66,7 +66,7 @@ Ich habe in diesem Abschnitt ein paar Teile vom Code eingefügt. Dieser Code ist
 
 **restart:** always, startet Container, die mit einem Exit-Code von Null (Erfolg) beendet werden, immer neu. 
 
-**environment:** Hier kann man zB. den Benutzernamen und das Pssswort in der zugehörigen Umgebung definieren.
+**environment:** Hier kann man zB. den Benutzernamen und das Passwort in der zugehörigen Umgebung definieren.
 
 **expose:** Mit expose kann man Ports freigeben, ohne sie auf dem Host-Rechner zu veröffentlichen. Sie sind nur für verknüpfte Dienste zugänglich.
 
