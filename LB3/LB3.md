@@ -89,11 +89,17 @@ So sieht es letztendlich aus, wenn man sich eingeloggt hat:
 
 ![eingeloggt](eingeloggt:PNG)
 
-
-
-
-
 ## Sicherheit
+
+Die Sicherheit hat in der Welt von Docker eine bedeutende Rolle. Es gibt verschiedene Möglichkeiten, seinen Container abzusichern.
+Ich werde hier ein paar Beispiele auflisten.
+
+* Jeder Container läuft mit aktueller Software und im Produktivmodus – Die Debug-Informationen sind abgeschaltet.
+* Services wie Apache oder MySQL sind mit einer Zugriffskontrolle oder einem Passwortschutz ausgestattet. Dieser Punkt ist sehr einfach umzusetzen. 
+* Die Anwendung wird überwacht und es wird ein Alarm ausgelöst, wenn eine ungewöhnliche Netzwerklast oder auffällige Zugriffsmuster erkannt werden.
+* Neustarts begrenzen: Wenn ein COntainer immer wieder stirbt und dann neugestartet wird, muss das System nicht unerheblich Zeit und Ressourcen aufwenden
+* Dateisysteme werden weitestgehend schreibgeschützt eingesetzt, sodass Angreifer Daten nicht einfach überschreiben können. 
+
 
 ## Persönliche Reflexion
 
