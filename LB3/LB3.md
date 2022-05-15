@@ -60,9 +60,19 @@ Ich habe in diesem Abschnitt ein paar Teile vom Code eingefügt. Dieser Code ist
 
 ## yaml File
 
-image: mariadb:10.6.4-focal, hier holt man das Image samt Version.
+**image:** mariadb:10.6.4-focal, hier holt man das Image samt Version.
 
-volumes: - db_data:/var/lib/mysql, Docker-Volumes sind Dateisysteme, die an Docker-Container angehängt werden, um die vom laufenden Container erzeugten Daten zu speichern.
+**volumes:** - db_data:/var/lib/mysql, Docker-Volumes sind Dateisysteme, die an Docker-Container angehängt werden, um die vom laufenden Container erzeugten Daten zu speichern.
+
+**restart:** always, startet Container, die mit einem Exit-Code von Null (Erfolg) beendet werden, immer neu. 
+
+**environment:** Hier kann man zB. den Benutzernamen und das Pssswort in der zugehörigen Umgebung definieren.
+
+**expose:** Mit expose kann man Ports freigeben, ohne sie auf dem Host-Rechner zu veröffentlichen. Sie sind nur für verknüpfte Dienste zugänglich.
+
+**ports:** Hier kann man Ports freigeben. Man gibt entweder beide Ports oder nur den Container-Port an. 
+
+
 
 ## Tests
 
