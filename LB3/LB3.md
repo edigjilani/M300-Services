@@ -23,7 +23,7 @@ Diese Grafik zeigt auf, wie die Umgebung aufgebaut ist.
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     #                                                               #	
     #    +++++++++++++++++++++++++    ++++++++++++++++++++++++++    #
-    #    # Web-Server            #    # Datenbank-Server       #    #       
+    #    # WordPress             #    # Datenbank-Server       #    #       
     #    # Port: 8080            #    # Port: 3306             #    #       
     #    # Volume:/              #    # Volume: /var/lib/mysql #    #       
     #    +++++++++++++++++++++++++    ++++++++++++++++++++++++++    #
@@ -56,7 +56,7 @@ docker-compose up -d
 <p></p>
 
 ## Beschreibung des Codes
-Ich habe in diesem Abschnitt ein paar Teile vom Code eingefügt. Dieser Code ist essenziell für meine VMs, mit diesem Code funktioniert das gesamte Projekt. Ich habe auch ein paar Teile des Codes kommentiert, damit er verständlicher wird. 
+Ich habe in diesem Abschnitt ein paar Teile vom Code eingefügt. Dieser Code ist essenziell für die Container, mit diesem Code funktioniert das gesamte Projekt. Ich habe auch ein paar Teile des Codes kommentiert, damit er verständlicher wird. 
 
 ## yaml File
 
@@ -74,7 +74,7 @@ Ich habe in diesem Abschnitt ein paar Teile vom Code eingefügt. Dieser Code ist
 
 ## Tests
 
-Zuerst muss man sicherstellen ob der Zugriff über diese URL auf den Webserver ordnungsgemäss funktioniert:
+Zuerst muss man sicherstellen ob der Zugriff über diese URL auf die WordPress Page ordnungsgemäss funktioniert:
 http://localhost:8080/
 
 Wenn das geklappt hat, sollte folgendes Fenster erscheinen:
