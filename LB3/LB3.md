@@ -58,17 +58,11 @@ docker-compose up -d
 ## Beschreibung des Codes
 Ich habe in diesem Abschnitt ein paar Teile vom Code eingefügt. Dieser Code ist essenziell für meine VMs, mit diesem Code funktioniert das gesamte Projekt. Ich habe auch ein paar Teile des Codes kommentiert, damit er verständlicher wird. 
 
+## yaml File
+
 image: mariadb:10.6.4-focal, hier holt man das Image samt Version.
 
-<p></p>
-
-volumes: - db_data:/var/lib/mysql, Docker-Volumes sind Dateisysteme, die an Docker-Container angehängt werden, um die vom laufenden Container erzeugten Daten zu speichern. 
-
-<p></p>
-
-
-
-## yaml File
+volumes: - db_data:/var/lib/mysql, Docker-Volumes sind Dateisysteme, die an Docker-Container angehängt werden, um die vom laufenden Container erzeugten Daten zu speichern.
 
 ## Tests
 
@@ -79,7 +73,7 @@ volumes: - db_data:/var/lib/mysql, Docker-Volumes sind Dateisysteme, die an Dock
 
 ## Quellen/Quellenverzeichnis
 
-Bei einem Grossteil des Quellcodes für mein yaml-File Scripts musste ich im Internet Beispiele anschauen oder mich bei Herr Bergers Vorlage bedienen, da ich Mühe hatte das gesamte Projekt von Null zu starten. 
+Bei einem Grossteil des Quellcodes für mein yaml-File musste ich im Internet Beispiele anschauen oder mich an Herr Bergers Vorlagen orientieren, da ich Mühe hatte das gesamte Projekt von Null zu starten. 
 Trotzdem habe ich den Code verstanden und auch selbst teilweise fertig geschrieben. 
 Es ist mir sehr wichtig, mein eigenes Projekt auch verstehen zu können.
 
