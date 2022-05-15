@@ -18,3 +18,30 @@ Für die Leistungsbeurteilung 3 erstelle ich mit einer yaml-Datei ........ .  ge
 
 ## Grafische Übersicht
 Diese Grafik zeigt auf, wie die Umgebung aufgebaut ist. 
+
+## Meine Umgebung
+
+Ich habe, wie in der grafischen Übersicht ersichtlich, einen Webserver und eine Datenbank aufgesetzt. 
+
+
+
+
+
+
+## Quellen/Quellenverzeichnis
+
+Bei einem Grossteil des Quellcodes für mein yaml-File Scripts musste ich im Internet Beispiele anschauen oder mich bei Herr Bergers Vorlage bedienen, da ich Mühe hatte das gesamte Projekt von Null zu starten. 
+Trotzdem habe ich den Code verstanden und auch selbst teilweise fertig geschrieben. 
+Es ist mir sehr wichtig, mein eigenes Projekt auch verstehen zu können.
+
+|Links|
+|----|
+|https://www.adminer.org/|
+
+## Kontaktperson
+
+Bei Fragen oder Anliegen, wenden Sie sich bitte an folgende Kontaktperson:
+
+|Name|Vorname|E-Mail|Firma|
+|----|-----|-----|-----|
+|Sherifi|Edi|edi.sherifi@edu.tbz.ch|Credit Suisse|
