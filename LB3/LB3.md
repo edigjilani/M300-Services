@@ -45,7 +45,18 @@ Diese Grafik zeigt auf, wie die Umgebung aufgebaut ist.
 Ich habe, wie in der grafischen Übersicht ersichtlich, eine mariadb-Datenbank aufgesetzt, mit Zugriff über WordPress
 Der Zugriff erfolgt über folgenden Link: http://localhost:8080/. 
 
+Die Kommunikation zwischen meiner Datenbank und dem Webserver erfolgt durch einen internen Netzwerk Adapter und der Zugriff auf die Datenbank (von aussen) kann über den WordPress Page mit dem Port 8080 erfolgen. 
+<p></p>
+
+Damit die VM aufstartet, muss man folgende Befehle eintippen: 
+
+```
+docker-compose up -d
+```
+<p></p>
+
 ## Beschreibung des Codes
+Ich habe in diesem Abschnitt ein paar Teile vom Code eingefügt. Dieser Code ist essenziell für meine VMs, mit diesem Code funktioniert das gesamte Projekt. Ich habe auch ein paar Teile des Codes kommentiert, damit er verständlicher wird. 
 
 ## yaml File
 
