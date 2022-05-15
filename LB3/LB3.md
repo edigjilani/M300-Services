@@ -14,10 +14,13 @@
 ## Kontaktperson
 
 ## Einleitung
-Für die Leistungsbeurteilung 3 erstelle ich mit einer yaml-Datei ........ .  gehostet. ..... Mit dem Befehl "docker-compose up" sollten die beiden VMs automatisiert aufstarten. Ich werde dazu zwei bereits vorhandene Builds verwenden. Das ist der Sinn dahinter. Ich habe am Anfang zuerst ein anderes Projekt durchgeführt, welches jedoch scheiterte. Ich musste eine andere Idee finden. 
+Für die Leistungsbeurteilung 3 erstelle ich mit einer yaml-Datei eine Datenbank samt Wordpress-Page access. Mit dem Befehl "docker-compose up -d" sollte die VM automatisiert aufstarten. Ich werde dazu zwei bereits vorhandene Builds verwenden. Das ist der Sinn dahinter. Ich habe am Anfang zuerst ein anderes Projekt durchgeführt, welches jedoch scheiterte. 
+Ich musste eine andere Idee finden. 
 
 ## Grafische Übersicht
 Diese Grafik zeigt auf, wie die Umgebung aufgebaut ist. 
+
+
 
 ## Meine Umgebung
 
