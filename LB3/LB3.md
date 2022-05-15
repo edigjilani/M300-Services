@@ -14,17 +14,36 @@
 ## Kontaktperson
 
 ## Einleitung
-Für die Leistungsbeurteilung 3 erstelle ich mit einer yaml-Datei eine Datenbank samt Wordpress-Page access. Mit dem Befehl "docker-compose up -d" sollte die VM automatisiert aufstarten. Ich werde dazu zwei bereits vorhandene Builds verwenden. Das ist der Sinn dahinter. Ich habe am Anfang zuerst ein anderes Projekt durchgeführt, welches jedoch scheiterte. 
+Für die Leistungsbeurteilung 3 erstelle ich mit einer yaml-Datei eine Datenbank samt Wordpress-Page access. Mit dem Befehl "docker-compose up -d" sollten die beiden VM's automatisiert aufstarten. Ich werde dazu zwei bereits vorhandene Builds verwenden. Das ist der Sinn dahinter. Ich habe am Anfang zuerst ein anderes Projekt durchgeführt, welches jedoch scheiterte. 
 Ich musste eine andere Idee finden. 
 
 ## Grafische Übersicht
 Diese Grafik zeigt auf, wie die Umgebung aufgebaut ist. 
 
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    #                                                               #	
+    #    +++++++++++++++++++++++++    ++++++++++++++++++++++++++    #
+    #    # Web-Server            #    # Datenbank-Server       #    #       
+    #    # Port: 8080            #    # Port: 3306             #    #       
+    #    # Volume:/              #    # Volume: /var/lib/mysql #    #       
+    #    +++++++++++++++++++++++++    ++++++++++++++++++++++++++    #
+    #                                                               #	
+    # Container                                                     #	
+    +---------------------------------------------------------------+
+    + Container-Engine: Docker                                      +	
+    +---------------------------------------------------------------+
+    + Gast OS: Ubuntu 16.04                                         +	
+    +---------------------------------------------------------------+
+    + Hypervisor: VirtualBox                                        +	
+    +---------------------------------------------------------------+
+    + Host-OS: Windows, MacOS, Linux                                +	
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 ## Meine Umgebung
 
-Ich habe, wie in der grafischen Übersicht ersichtlich, einen  und eine Datenbank aufgesetzt. 
+Ich habe, wie in der grafischen Übersicht ersichtlich, eine mariadb-Datenbank aufgesetzt, mit Zugriff über WordPress
+Der Zugriff erfolgt über folgenden Link: http://localhost:8080/. 
 
 ## Beschreibung des Codes
 
@@ -46,6 +65,7 @@ Es ist mir sehr wichtig, mein eigenes Projekt auch verstehen zu können.
 |Links|
 |----|
 |https://hub.docker.com/|
+|https://github.com/docker/awesome-compose|
 
 ## Kontaktperson
 
