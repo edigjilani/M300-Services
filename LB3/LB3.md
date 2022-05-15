@@ -1,4 +1,4 @@
-# Leistungsbeurteilung 3 Doku Edi Sherifi 
+# Leistungsbeurteilung 3 Dokumentation Edi Sherifi
 ## Diese Dokumentation wurde geschrieben von Edi Sherifi. 
 ----------------------------------------------------------------------------
 # **Inhaltsverzeichnis**
@@ -14,7 +14,7 @@
 ## Kontaktperson
 
 ## Einleitung
-Für die Leistungsbeurteilung 3 erstelle ich mit einer yaml-Datei eine Datenbank samt Wordpress-Page access. Mit dem Befehl "docker-compose up oder docker-compose up -d" sollten die beiden VM's automatisiert aufstarten. Ich werde dazu zwei bereits vorhandene Builds verwenden. Das ist der Sinn dahinter. Ich habe am Anfang zuerst ein anderes Projekt durchgeführt, welches jedoch scheiterte. 
+Für die Leistungsbeurteilung 3 erstelle ich mit einer yaml-Datei eine Datenbank samt Wordpress-Page access. Mit dem Befehl "docker-compose up oder docker-compose up -d" sollten die beiden Container automatisiert aufstarten. Ich werde dazu zwei bereits vorhandene Builds verwenden. Das ist der Sinn dahinter. Ich habe am Anfang zuerst ein anderes Projekt durchgeführt, welches jedoch scheiterte. 
 Ich musste eine andere Idee finden. 
 
 ## Grafische Übersicht
@@ -82,12 +82,12 @@ Wenn das geklappt hat, sollte folgendes Fenster erscheinen:
 
 Wenn man die Sprache ausgewählt hat, kann man folgende Credentials eingeben und sich schliesslich einloggen:
 
-![credentials](credentials.PNG)
+![credentials](credential.PNG)
 
 
 So sieht es letztendlich aus, wenn man sich eingeloggt hat: 
 
-![eingeloggt](eingeloggt:PNG)
+![eingeloggt](eingeloggt.PNG)
 
 ## Sicherheit
 
@@ -102,7 +102,15 @@ Ich werde hier ein paar Beispiele auflisten.
 
 
 ## Persönliche Reflexion
+In diesem Projekt habe ich sehr viel über das Thema Docker gelernt. Wie schon beim ersten Thema Vagrant, kannte ich mich vorher überhaupt nicht aus in diesem Themengebiet und das machte die Situation wiederum nicht einfacher. Das Ziel war es, die Welt von Docker genauso gut verstehen zu können wie Vagrant. Ich war gespannt auf mein Projekt. Dank den Präsentationen von Herrn Berger konnte ich sehr viel über die Einzelheiten von Docker lernen und das Thema wurde mir von Modultag zu Modultag immer klarer. Herr Berger hat mir dieses Thema spannend näher gebracht. Dennoch habe ich anfangs Schwierigkeiten gehabt und musste viel nachfragen bzw. im Internet recherieren. Ich wusste zuerst nicht, was für ein Projekt ich wählen sollte, letztendlich liess ich mich von den vielen Beispielen im Internet inspirieren und ich wollte ein etwas komplexeres Projekt durchführen. 
+Am Anfang lief es gut, doch dann kamen sehr viele Fehlermeldungen. Ich habe sehr lange versucht, alle Errors zu finden und beseitigen, doch dieser Prozess kostete mich viel Zeit und ich musste leider auf ein einfacheres Projekt ausweichen, aber ich war trotzdem sehr motiviert, ein gutes Projekt samt Dokumentation abzuliefern.
 
+Ich habe es geschafft, den Code zu verstehen und zu beschreiben in der Dokumentation. 
+Das Projekt war eine tolle Erfahrung und nun weiss ich wie man ein yaml-File erstellt, welches man ganz einfach mit docker-compose up starten kann. 
+
+Während dem Projekt fühlte ich mich nicht verloren, da ich immer tolle Unterstützung von Herrn Berger erhalten habe. Da mein erstes Projekt scheiterte und mir deshalb die Zeit ausging, konnte ich nicht das Optimum rausholen aus dem Projekt.
+
+Alles in Allem kann ich behaupten, dass dieses Modul trotzdem ein grosser Erfolg war und ich jetzt über sehr viel Wissen auf diesem Themengebiet verfüge. 
 
 ## Quellen/Quellenverzeichnis
 
