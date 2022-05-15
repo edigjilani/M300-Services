@@ -14,7 +14,7 @@
 ## Kontaktperson
 
 ## Einleitung
-Für die Leistungsbeurteilung 3 erstelle ich mit einer yaml-Datei eine Datenbank samt Wordpress-Page access. Mit dem Befehl "docker-compose up -d" sollten die beiden VM's automatisiert aufstarten. Ich werde dazu zwei bereits vorhandene Builds verwenden. Das ist der Sinn dahinter. Ich habe am Anfang zuerst ein anderes Projekt durchgeführt, welches jedoch scheiterte. 
+Für die Leistungsbeurteilung 3 erstelle ich mit einer yaml-Datei eine Datenbank samt Wordpress-Page access. Mit dem Befehl "docker-compose up oder docker-compose up -d" sollten die beiden VM's automatisiert aufstarten. Ich werde dazu zwei bereits vorhandene Builds verwenden. Das ist der Sinn dahinter. Ich habe am Anfang zuerst ein anderes Projekt durchgeführt, welches jedoch scheiterte. 
 Ich musste eine andere Idee finden. 
 
 ## Grafische Übersicht
@@ -57,6 +57,16 @@ docker-compose up -d
 
 ## Beschreibung des Codes
 Ich habe in diesem Abschnitt ein paar Teile vom Code eingefügt. Dieser Code ist essenziell für meine VMs, mit diesem Code funktioniert das gesamte Projekt. Ich habe auch ein paar Teile des Codes kommentiert, damit er verständlicher wird. 
+
+image: mariadb:10.6.4-focal, hier holt man das Image samt Version.
+
+<p></p>
+
+volumes: - db_data:/var/lib/mysql, Docker-Volumes sind Dateisysteme, die an Docker-Container angehängt werden, um die vom laufenden Container erzeugten Daten zu speichern. 
+
+<p></p>
+
+
 
 ## yaml File
 
