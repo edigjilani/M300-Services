@@ -80,7 +80,9 @@ http://localhost:8080/
 Wenn das geklappt hat, sollte folgendes Fenster erscheinen:
 ![logged in](successful.PNG)
 
+Wenn man die Sprache ausgewählt hat, kann man folgende Credentials eingeben und sich schliesslich einloggen:
 
+![credentials](credentials.PNG)
 
 
 ## Sicherheit
