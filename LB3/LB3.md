@@ -14,18 +14,24 @@
 ## Kontaktperson
 
 ## Einleitung
-Für die Leistungsbeurteilung 3 erstelle ich mit einer yaml-Datei ........ .  gehostet. ..... Mit dem Befehl "docker-compose up" sollten die beiden VMs automatisiert aufstarten. Ich werde dazu zwei bereits vorhandene Builds verwenden. Das ist der Sinn dahinter. 
+Für die Leistungsbeurteilung 3 erstelle ich mit einer yaml-Datei ........ .  gehostet. ..... Mit dem Befehl "docker-compose up" sollten die beiden VMs automatisiert aufstarten. Ich werde dazu zwei bereits vorhandene Builds verwenden. Das ist der Sinn dahinter. Ich habe am Anfang zuerst ein anderes Projekt durchgeführt, welches jedoch scheiterte. Ich musste eine andere Idee finden. 
 
 ## Grafische Übersicht
 Diese Grafik zeigt auf, wie die Umgebung aufgebaut ist. 
 
 ## Meine Umgebung
 
-Ich habe, wie in der grafischen Übersicht ersichtlich, einen Webserver und eine Datenbank aufgesetzt. 
+Ich habe, wie in der grafischen Übersicht ersichtlich, einen  und eine Datenbank aufgesetzt. 
 
+## Beschreibung des Codes
 
+## yaml File
 
+## Tests
 
+## Sicherheit
+
+## Persönliche Reflexion
 
 
 ## Quellen/Quellenverzeichnis
@@ -36,7 +42,7 @@ Es ist mir sehr wichtig, mein eigenes Projekt auch verstehen zu können.
 
 |Links|
 |----|
-|https://www.adminer.org/|
+|https://hub.docker.com/|
 
 ## Kontaktperson
 
